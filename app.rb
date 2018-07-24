@@ -10,7 +10,9 @@ end
 get'/forget' do
 	erb:forget
 end
- 
+get '/wrong' do
+	erb :wrong
+  end
 post '/log' do
 	username = params[:user_name]
 	password = params[:pass]
@@ -26,14 +28,16 @@ post '/log' do
 		unless user_arr.include?(username) 
 			"invalid user name or password"
 			erb :login
-			
+			redirect '/wrong'
 		end
 		unless pass_arr.include?(password)
 			"invalid user name or password"
 			erb :login
+			redirect '/wrong'
 		end
 		"invalid user name or password"
-end
+			redirect '/wrong'
+	end
 
 
 get '/calc' do
