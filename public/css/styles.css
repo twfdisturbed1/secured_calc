@@ -1,0 +1,152 @@
+  * 
+    {
+        box-sizing: border-box;
+    }
+body 
+    { 
+        background:#000000;
+        background-image: url("/images/background.jpg");
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffffff;
+    }
+header 
+    {
+        background-color: #333333;
+        padding: 0px;
+        text-align: center;
+        font-size: 25px;
+        color: Orange;
+        border: orange;
+        border-style: solid;
+     }
+nav 
+    {
+        display: inline-block;
+        width: 15%;
+        height: 500px;
+        background: #111111;
+        padding: 0px;
+        border: #ffffff;
+        border-style: solid;
+        
+    }
+nav ul 
+    {
+        list-style-type: none;
+        padding: 5px;
+    }
+article 
+    {
+        float: right;
+        padding: 0px;
+        width: 85%;
+        text-align: center;
+        background-color: #666666;
+        height: 500px;
+        border: #ffffff;
+        border-style: dotted;
+        opacity: 0.5;
+        filter: alpha(opacity=50); /* For IE8 and earlier */
+    }
+section:after 
+    {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+footer 
+    {
+        background-color: #333333;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        border: orange;
+        border-style: solid;
+    }
+@media (max-width: 600px) 
+    { nav, article 
+    {
+        width: 100%;
+        height: auto;
+    }
+    }
+a:link 
+    {
+        color: white;
+    }
+a:visited
+    {
+        color: whitesmoke;
+    }
+a:hover 
+    {
+        color: orange;
+    }
+a:active 
+    {
+        color: white;
+    }
+input[type=number] {
+        border: 2px solid orange;
+        border-radius: 4px;
+        background-color: #666666;
+        color: orange;
+        font-size: 25px;
+    }
+input[type=text] {
+        border: 2px solid orange;
+        border-radius: 4px;
+        background-color: #666666;
+        color: orange;
+        font-size: 25px;
+    }
+    input[type=password] {
+        border: 2px solid orange;
+        border-radius: 4px;
+        background-color: #666666;
+        color: orange;
+        font-size: 25px;
+    }
+    input[type=radio] {
+        border: 2px solid orange;
+        border-radius: 4px;
+        background-color: #666666;
+        color: orange;
+        font-size: 25px;
+    }
+    input[type=button], input[type=submit], input[type=reset] {
+        background-color: #666666;
+        border-style: groove;
+        border: 4px solid orange;
+        color: whitesmoke;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 25px;
+        
+    }
+.center 
+    {
+    padding: 70px 0;
+    }  
+.total
+    {
+        font-size: 25px;  
+    }    
+::placeholder 
+    { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: orange;
+        opacity: 1; /* Firefox */
+    }
+    
+:-ms-input-placeholder 
+    { /* Internet Explorer 10-11 */
+        color: orange;
+    }
+    
+::-ms-input-placeholder 
+    { /* Microsoft Edge */
+        color: orange;
+    }
