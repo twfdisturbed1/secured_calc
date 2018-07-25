@@ -7,7 +7,7 @@ get '/' do
 	erb :login
 end
 
-get'/forget' do
+get '/forget' do
 	erb:forget
 end
 get '/wrong' do
@@ -45,7 +45,7 @@ get '/calc' do
 	val_1 = session[:val_1] || ""
 	val_2 = session[:val_2] || ""
 	operation = session[:operation] || ""
-	result = session[:result] || false
+	result = session[:result]
   erb :calc, locals:{result: result, val_1: val_1, val_2: val_2, operation: operation}
 
 end
