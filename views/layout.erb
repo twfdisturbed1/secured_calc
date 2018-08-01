@@ -1,30 +1,34 @@
 <link rel="stylesheet" type="text/css" href="/css/styles.css">
 
 <title>Secured Calculator</title>
-
-<header><h2>Secured Calculator app</h2></header>
 <body>
   <nav>
-    <ul>
-	    <li><center><u><b>Menu</b></u></center></li>
-            <hr color="orange">
-          <li><center><u><b>Other Programs by me</b></u></center></li>
-            <hr color="orange">
-        <li><a href="https://coin-changer-wm.herokuapp.com/">Coin Changer</a></li>
-        <li><a href="https://personal-detail-wm.herokuapp.com/">Personal Details</a></li>
-		<li><a href="https://random-pairing.herokuapp.com/">Random Name Pairing</a></li>
-            <hr color="orange">
-          <li><center><u><b>Awesome Websites</b></u></center></li>
-            <hr color="orange">
-        <li><a href="http://www.disturbedmedia.com">Disturbedmedia.com</a></li>
-        <li><a href="http://www.minedminds.org/">Mined Minds</a></li>
-    	<li><a href="https://www.w3schools.com/">W3schools.com</a></li>
-            <hr color="orange">
-        <center>
-           <a href="http://www.minedminds.org/"><img align="center" border="1px" width="150px" height="75px" src="/images/logo.png"></a>
-        </center>
-		</ul>
+      <div class="dropdown">
+  <button class="dropbtn">More Programs by me</button>
+  <div class="dropdown-content">
+        <a href="https://coin-changer-wm.herokuapp.com/">Coin Changer</a>
+        <a href="https://random-pairing.herokuapp.com/">Random Name Pairing</a>
+       <a href="https://personal-detail-wm.herokuapp.com/">Personal Details</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Awesome Websites</button>
+  <div class="dropdown-content">
+        <a href="http://www.disturbedmedia.com">Disturbedmedia.com</a>
+        <a href="http://www.minedminds.org/">Mined Minds</a>
+    	<a href="https://www.w3schools.com/">W3schools.com</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Social Media</button>
+  <div class="dropdown-content">
+        <a href="http://www.twitter.com/twfdisturbed">twitter @twfdisturbed</a>
+    	<a href="https://www.instagram.com/twfdisturbed">instagram @twfdisturbed</a>
+        <a href="http://www.youtube.com/twfdisturbed">Youtube</a>
+  </div>
+</div>
   </nav>
+  <header><h2>Secured Calculator app</h2></header>
   <article>
     <%=yield%>
 </article>
